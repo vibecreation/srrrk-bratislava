@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SRRRK &mdash; Lemonade, Coffee &amp; Wine Bar | Bratislava Old Town</title>
+<meta name="description" content="SRRRK &mdash; a lemonade bar, caf&eacute;, wine bar, and reading room tucked in the courtyard of Bratislava's Primate's Palace." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1A1A1A',
+          gold: { DEFAULT: '#C9A227', dim: '#9C7E1E', light: '#E8C955' },
+          cream: '#FCF9F3',
+          ash: '#6E6A63',
+        },
+        fontFamily: { display: ['Cinzel', 'serif'], body: ['Plus Jakarta Sans', 'sans-serif'] },
+        keyframes: {
+          fadeUp: { '0%': { opacity: '0', transform: 'translateY(28px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        },
+        animation: { 'fade-up': 'fadeUp 1s cubic-bezier(0.16,1,0.3,1) forwards' },
+      },
+    },
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #FCF9F3; }
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(28px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .reveal { opacity: 0; }
+  .reveal.in-view { animation: fadeUp 1s cubic-bezier(0.16,1,0.3,1) forwards; }
+  .reveal-delay-1.in-view { animation-delay: 0.15s; }
+  .reveal-delay-2.in-view { animation-delay: 0.3s; }
+  .reveal-delay-3.in-view { animation-delay: 0.45s; }
+  @keyframes bounce2 { 0%,100%{transform:translateY(0);} 50%{transform:translateY(10px);} }
+  .scrollcue { animation: bounce2 1.8s ease-in-out infinite; }
+</style>
+</head>
+<body class="font-body text-ink">
+
+<nav class="fixed top-0 w-full z-50 bg-ink/90 backdrop-blur text-cream">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="font-display tracking-[0.2em] text-gold text-lg">SRRRK</span>
+    <div class="hidden md:flex gap-8 text-sm tracking-wide">
+      <a href="#story" class="hover:text-gold transition">Our Story</a>
+      <a href="#menu" class="hover:text-gold transition">Menu</a>
+      <a href="#visit" class="hover:text-gold transition">Visit</a>
+    </div>
+  </div>
+</nav>
+
+<section class="relative min-h-[100dvh] w-full bg-ink flex flex-col items-center justify-center text-center overflow-hidden px-6">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#2B2410] via-[#3A2F14] to-[#2B2410]"></div>
+  <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 30% 20%, #C9A15A33, transparent 50%), radial-gradient(circle at 70% 80%, #C9A15A22, transparent 50%);"></div>
+  <div class="relative z-10">
+    <p class="reveal in-view text-gold tracking-[0.3em] text-xs md:text-sm mb-6">PRIMATE'S PALACE &middot; BRATISLAVA</p>
+    <h1 class="reveal in-view reveal-delay-1 font-display text-6xl md:text-8xl text-cream mb-6">SRRRK</h1>
+    <p class="reveal in-view reveal-delay-2 text-cream/80 text-xl md:text-2xl font-light mb-3">Lemonade, Coffee &amp; Wine Bar</p>
+    <p class="reveal in-view reveal-delay-3 text-cream/50 text-sm">Homemade lemonades &middot; Wine &middot; Beer &middot; A reading corner</p>
+  </div>
+  <a href="#story" class="absolute bottom-10 z-10 text-gold scrollcue" aria-label="Scroll down">
+    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
+  </a>
+</section>
+
+<section id="story" class="reveal py-24 px-6 max-w-4xl mx-auto text-center">
+  <p class="text-gold tracking-[0.3em] text-xs mb-4">OUR STORY</p>
+  <h2 class="font-display text-3xl md:text-4xl mb-6">Younger sibling of a Bratislava favorite</h2>
+  <p class="text-ash text-lg leading-relaxed">
+    Tucked into the courtyard of the Primate's Palace, SRRRK is part lemonade bar, part
+    café, part wine and beer bar, part reading room — the younger sibling of Bratislava's
+    beloved Baryk, from the same team behind branding studio Echt and small-batch soda
+    maker @majami.drinks. No hot food, no hard liquor, just a genuinely easy place to feel
+    good in one of the city's most beautiful courtyards.
+  </p>
+</section>
+
+<section id="menu" class="reveal py-24 px-6 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-gold tracking-[0.3em] text-xs text-center mb-4">THE MENU</p>
+    <h2 class="font-display text-3xl md:text-4xl text-center mb-16">Drinks &amp; Bites</h2>
+    <div class="grid md:grid-cols-2 gap-x-16 gap-y-4">
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>House Lemonade</span><span class="text-gold">&euro;3.50</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Seasonal Lemonade</span><span class="text-gold">&euro;3.80</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Espresso</span><span class="text-gold">&euro;2.20</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Flat White</span><span class="text-gold">&euro;3.20</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Glass of Wine</span><span class="text-gold">&euro;4.50</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Draft Beer</span><span class="text-gold">&euro;3.60</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Cold Brew</span><span class="text-gold">&euro;3.90</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Snack Plate</span><span class="text-gold">&euro;6.50</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Sweet Bite of the Day</span><span class="text-gold">&euro;3.20</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Toastie</span><span class="text-gold">&euro;5.50</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="reveal py-24 px-6 bg-ink text-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-gold tracking-[0.3em] text-xs mb-4">VISIT</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-10">Come by</h2>
+
+    <div class="w-full rounded overflow-hidden mb-10 border border-gold/30">
+      <iframe
+        src="https://www.google.com/maps?q=SRRRK+Primacialny+palac+Bratislava&output=embed"
+        width="100%" height="320" style="border:0; filter: grayscale(0.3) contrast(1.1);"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SRRRK caf&eacute; location map">
+      </iframe>
+    </div>
+
+    <p class="text-cream/70 mb-8">Primaci&aacute;lny pal&aacute;c, Primaci&aacute;lne n&aacute;mestie 1, 811 01 Bratislava</p>
+
+    <a href="https://www.instagram.com/srrrk.bratislava" target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-ink font-medium px-8 py-4 rounded-full transition">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.02-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07zm0 5.27a4.57 4.57 0 100 9.14 4.57 4.57 0 000-9.14zm0 7.54a2.97 2.97 0 110-5.94 2.97 2.97 0 010 5.94zm5.83-7.72a1.07 1.07 0 11-2.14 0 1.07 1.07 0 012.14 0z"/></svg>
+      Follow @srrrk.bratislava
+    </a>
+  </div>
+</section>
+
+<footer class="py-8 text-center text-ash text-xs bg-cream">
+  &copy; 2026 SRRRK &middot; Bratislava
+</footer>
+
+<script>
+  var els = document.querySelectorAll('.reveal:not(.in-view)');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+</script>
+
+</body>
+</html>
